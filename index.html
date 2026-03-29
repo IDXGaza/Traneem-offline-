@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#f8fafb">
@@ -12,19 +11,18 @@
     <link rel="manifest" href="/manifest.webmanifest">
     <link rel="icon" href="/icons/favicon-48.png">
     <link rel="apple-touch-icon" href="/icons/icon-192.png">
-<script>
+    <script>
       if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
     </script>
-    <script type="module" crossorigin src="/assets/main.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main.css">
+    <script type="module" crossorigin src="/main.js"></script>
+    <link rel="stylesheet" crossorigin href="/main.css">
   </head>
   <body class="bg-[#f8fafb] dark:bg-black transition-colors duration-300">
     <div id="root"></div>
-  
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
@@ -32,6 +30,5 @@
         });
       }
     </script>
-
   </body>
 </html>
