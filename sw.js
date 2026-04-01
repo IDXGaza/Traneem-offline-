@@ -1,22 +1,22 @@
-const CACHE_NAME = "traneem-pwa-v1";
+const CACHE_NAME = "traneem-pwa-v2";
 const PRECACHE_URLS = [
   "/",
   "/index.html",
   "/manifest.webmanifest",
   "/sw.js",
-  "/assets/main.js",
-  "/assets/main.css",
-  "/assets/default-cover.jpg",
-  "/fonts/cairo.css",
-  "/icons/favicon-48.png",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png",
-  "/icons/icon-maskable-512.png",
-  "/fonts/cairo-1.ttf",
-  "/fonts/cairo-2.ttf",
-  "/fonts/cairo-3.ttf",
-  "/fonts/cairo-4.ttf",
-  "/fonts/cairo-5.ttf"
+  "/main.js",
+  "/main.css",
+  "/default-cover.jpg",
+  "/cairo.css",
+  "/favicon-48.png",
+  "/icon-192.png",
+  "/icon-512.png",
+  "/icon-maskable-512.png",
+  "/cairo-1.ttf",
+  "/cairo-2.ttf",
+  "/cairo-3.ttf",
+  "/cairo-4.ttf",
+  "/cairo-5.ttf"
 ];
 
 self.addEventListener('install', (event) => {
