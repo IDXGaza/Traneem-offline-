@@ -47,7 +47,7 @@ self.addEventListener('fetch', (event) => {
       caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
       return res;
     }).catch(() => {
-      if (req.destination === 'image') return caches.match('/assets/default-cover.jpg');
+      if (req.destination === 'image') return caches.match('/default-cover.jpg');
       return new Response('', { status: 504, statusText: 'Offline' });
     });
   }));
