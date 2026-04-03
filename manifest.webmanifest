@@ -6,7 +6,7 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#f8fafb",
   "theme_color": "#f8fafb",
   "description": "نسخة PWA تعمل أوفلاين لتطبيق ترانيم.",
   "icons": [
